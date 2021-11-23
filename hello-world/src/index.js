@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Layout from './Layout';
 import reportWebVitals from './reportWebVitals';
 
 const styleArgument = { fontSize:'100px',color: 'red' };
@@ -34,6 +35,11 @@ const Progress = () =>{
     </div>);
 }
 
+const printMessage = () =>{
+  document.getElementById('show-area').innerHTML="我被按到了";
+}
+
+
 
 ReactDOM.render(
   /*<React.StrictMode>
@@ -58,10 +64,19 @@ ReactDOM.render(
   缺點是很容易讓版面看起來很亂，而且因為是在render創造一個新函式，
   每次渲染時都會創造一次，會影響效能，所以一般能用1的話就會用1的方法。
   <button value="true"  onClick={(e)=>{ myFunction1();myFunction2()} }>是</button>*/
-
+  /* <div>
+      <App name="我的名字" handleClick={printMessage}/>
+    <div id="show-area"></div>
+  </div>,*/
+  
+  /*<div>
+    <Layout>
+      <App>在index.js中設定文字</App>
+      </Layout>
+  </div>,*/
   <div>
-    <App name="我的名字"/>
-  </div>,
+    <App />
+    </div>,
   document.getElementById('root')
 );
 
