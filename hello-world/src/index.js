@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Layout from './Layout';
+import NewProgress from './Progress';
+import Fetch from './Fetch';
+import Baby from './baby';
 import reportWebVitals from './reportWebVitals';
 
 const styleArgument = { fontSize:'100px',color: 'red' };
@@ -75,7 +78,7 @@ ReactDOM.render(
       </Layout>
   </div>,*/
   <div>
-    <App />
+    <Baby />
     </div>,
   document.getElementById('root')
 );
