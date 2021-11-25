@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component  } from 'react';
 class Baby extends Component{
     constructor(props) {
       super(props);
@@ -17,7 +17,7 @@ class Baby extends Component{
       }
   
       scrollTo(){
-          /* 讀取 container元素的scrollLeft */
+          //讀取 container元素的scrollLeft
           let scrollLeft=document.getElementById('container').scrollLeft; 
           if(scrollLeft<300){
               /* 修改 container元素的scrollLeft */
@@ -49,4 +49,5 @@ class Baby extends Component{
   
       }
   }
+  
 export default Baby;
